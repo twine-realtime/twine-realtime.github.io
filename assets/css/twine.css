@@ -52,6 +52,14 @@
 	margin-bottom: 35px;
 }
 
+.anchor {
+	color: #429EA6;
+}
+
+.anchor:hover {
+	color: #429ea692;
+}
+
 #tech-talk {
 	position: absolute;
   top: 0;
@@ -59,7 +67,6 @@
   width: 100%;
   height: 100%;
 }
-
 
 @media screen and (max-width: 1680px) {
 
@@ -105,12 +112,34 @@
 #four {
 	background: #fff;
 	color: var(--primary-dark);
+	padding: 50px;
 }
 
 #four h1, #four h2, #four h3, #four h4 {
-	color: rgb(28, 28, 28);
+	color: var(--secondary-dark);
+	padding-bottom: 20px;
+}
+
+#four h2 {
+	font-size: 1.7rem;
+}
+
+#four h3 {
+	font-size: 1.5rem;
+}
+
+#four h4 {
+	font-size: 1.3rem;
 }
 
 .bullets {
 	margin-top: -30px;
+}
+
+@media screen and (max-width: 736px) {
+
+	#four {
+		padding: 0px;
+	}
+
 }

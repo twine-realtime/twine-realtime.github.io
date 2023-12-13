@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>Twine Real-Time</title>
@@ -212,7 +207,7 @@
 									Real-time communication is a way of describing an exchange of information over a network at a speed that humans perceive as instantaneous. In reality, there is no such thing as instantaneous data transmission: there is always latency. This is due to several variables, ranging from the TCP handshake to head-of-line blocking, and even to the physical network layer of cables and cords. 
 								</p>
 								<p >
-									Response times of up to 100 milliseconds are often categorized as real-time [1]. This benchmark is based on the 250 milliseconds the average human requires to register and process a visual event [1]. In the context of real-time communication, this provides a human-centered benchmark for what can be perceived as instantaneous.
+									Response times of up to 100 milliseconds are often categorized as real-time [<a class="anchor" target="_blank" href="https://www.pubnub.com/blog/how-fast-is-realtime-human-perception-and-technology/">1</a>]. This benchmark is based on the 250 milliseconds the average human requires to register and process a visual event [<a class="anchor" target="_blank" href="https://www.pubnub.com/blog/how-fast-is-realtime-human-perception-and-technology/">1</a>]. In the context of real-time communication, this provides a human-centered benchmark for what can be perceived as instantaneous.
 								</p>
 							</section>	
 
@@ -293,7 +288,7 @@
 							<section>
 								<h4>2.3.2 Server-Sent Events (SSE)</h4>
 								<p>
-									Server-sent events are a technology designed to facilitate real-time communication between a server and a client over a single HTTP connection [3]. Unlike traditional polling methods, where the client repeatedly requests information from the server, SSE allows the server to proactively push updates to the client as soon as new data becomes available.
+									Server-sent events are a technology designed to facilitate real-time communication between a server and a client over a single HTTP connection [<a class="anchor" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events">3</a>]. Unlike traditional polling methods, where the client repeatedly requests information from the server, SSE allows the server to proactively push updates to the client as soon as new data becomes available.
 								</p>
 								<p>
 									SSE are less resource intensive than HTTP polling yet only support unidirectional communication from server to client, which limits their usefulness in applications that require bidirectional communication. Additionally, their browser support is less robust than that of WebSockets.
@@ -308,7 +303,7 @@
 							<section>
 								<h4>2.3.3 Websockets</h4>
 								<p>
-									WebSocket is a communication protocol that establishes a long-lived and bidirectional connection between a client and a server. WebSockets are established with an initial HTTP request-response exchange, where the client sends an upgrade request to the server, signifying the transition to the WebSocket protocol. If the server supports WebSockets, the connection is upgraded from HTTP to WebSocket [4].
+									WebSocket is a communication protocol that establishes a long-lived and bidirectional connection between a client and a server. WebSockets are established with an initial HTTP request-response exchange, where the client sends an upgrade request to the server, signifying the transition to the WebSocket protocol. If the server supports WebSockets, the connection is upgraded from HTTP to WebSocket [<a class="anchor" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade">4</a>].
 								</p>
 								<img 
 									class="diagram" 
@@ -316,7 +311,7 @@
 									alt="diagram of websockets"
 								/>
 								<p>
-									Although WebSocket connections require HTTP to establish an initial connection, HTTP and WebSockets are two separate communication protocols and have distinct characteristics [5]:
+									Although WebSocket connections require HTTP to establish an initial connection, HTTP and WebSockets are two separate communication protocols and have distinct characteristics [<a class="anchor" target="_blank" href="https://ably.com/topic/websockets-vs-http">5</a>]:
 								</p>
 								<ul class="bullets">
 									<li>
@@ -347,7 +342,7 @@
 									</li>
 								</ul>
 								<p>
-									It is these advantages as well as the wide adoption of WebSockets by modern web applications such as GitHub and Slack that led us to use them in our implementation of Twine [37]. 
+									It is these advantages as well as the wide adoption of WebSockets by modern web applications such as GitHub and Slack that led us to use them in our implementation of Twine [<a class="anchor" target="_blank" href="https://ably.com/topic/what-are-websockets-used-for">37</a>]. 
 								</p>
 								<p>
 									However, it is also important to note that WebSockets have disadvantages when compared to traditional HTTP, polling, and Server-sent events that make them not the best choice for all use cases:
@@ -399,13 +394,13 @@
 									Scalability refers to a software system's capability to manage a growing workload without a significant decline in performance or responsiveness. 
 								</p>
 								<blockquote>
-									<i>“Scalable systems are designed to adapt to varying workloads, ensuring the stability of the overall system.”</i> [12] 
+									<i>“Scalable systems are designed to adapt to varying workloads, ensuring the stability of the overall system.”</i> [<a class="anchor" target="_blank" href="https://techterms.com/definition/scalable">12</a>]
 								</blockquote>
 								<p>
 									Scaling to handle an increased workload can be implemented in two main ways: vertical and horizontal scaling.
 								</p>
 								<p>
-									<strong class="bold">Vertical Scaling</strong>, or scaling "up," involves adding resources to a single node. This typically involves upgrading the hardware, such as incorporating more powerful processors, expanding storage, or increasing memory. While it offers a straightforward way to enhance a node's performance, there are limits to how much a single node can be improved in this manner [13].
+									<strong class="bold">Vertical Scaling</strong>, or scaling "up," involves adding resources to a single node. This typically involves upgrading the hardware, such as incorporating more powerful processors, expanding storage, or increasing memory. While it offers a straightforward way to enhance a node's performance, there are limits to how much a single node can be improved in this manner [<a class="anchor" target="_blank" href="https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling/">13</a>].
 								</p>
 								<img 
 									class="diagram" 
@@ -413,7 +408,7 @@
 									alt="diagram of vertical scaling"
 								/>
 								<p>
-									<strong class="bold">Horizontal Scaling</strong>, also known as scaling "out," involves adding more nodes to a system. Instead of amplifying the capacity of a single node, horizontal scaling distributes the workload across multiple nodes. This approach provides a potentially limitless solution for handling increased loads. It also enhances redundancy and fault tolerance, ensuring that the failure of one node does not bring the entire system to a halt [13]. Due to its near-limitless scaling potential, this case study will focus on horizontal scaling.
+									<strong class="bold">Horizontal Scaling</strong>, also known as scaling "out," involves adding more nodes to a system. Instead of amplifying the capacity of a single node, horizontal scaling distributes the workload across multiple nodes. This approach provides a potentially limitless solution for handling increased loads. It also enhances redundancy and fault tolerance, ensuring that the failure of one node does not bring the entire system to a halt [<a class="anchor" target="_blank" href="https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling/">13</a>]. Due to its near-limitless scaling potential, this case study will focus on horizontal scaling.
 								</p>
 								<img 
 									class="diagram" 
@@ -493,7 +488,7 @@
 							<section>
 								<h3>3.3.0 Dropped WebSocket Connections</h3>
 								<p>
-									WebSocket connections may be interrupted at some point in their life cycle due to poor internet or network conditions. Additionally, a WebSocket connection may drop due to  client-side proxies and firewalls or server-side node failures or planned maintenance.e. As mentioned earlier, connection loss is especially a concern regarding WebSockets because, compared to HTTP, WebSockets are more sensitive to network disruptions due to their stateful nature [16].
+									WebSocket connections may be interrupted at some point in their life cycle due to poor internet or network conditions. Additionally, a WebSocket connection may drop due to  client-side proxies and firewalls or server-side node failures or planned maintenance.e. As mentioned earlier, connection loss is especially a concern regarding WebSockets because, compared to HTTP, WebSockets are more sensitive to network disruptions due to their stateful nature [<a class="anchor" target="_blank" href="https://support.quicknode.com/hc/en-us/articles/9422611596305-Handling-Websocket-Drops-and-Disconnections">16</a>].
 								</p>
 								<p>
 									Dropped Websocket connections become a more significant issue as a system scales and takes on more connections. As mentioned, managing long-lived WebSocket connections requires server resources - like CPU and memory - to establish and maintain WebSocket connections as we scale. At a particular scale, unexpected surges in traffic can lead to server overload and, ultimately, dropped WebSocket connections.
@@ -535,7 +530,7 @@
 							<!-- Exisiting Solutions -->
 							<section id="existing-solutions_cs">
 								<section>
-									<h2>4.0.0 Comparing existing solutions</h2>
+									<h2>4.0 Comparing existing solutions</h2>
 									<p>
 										To summarize, we set out to build Twine as a drop-in Real-time As A Service that:
 									</p>
@@ -589,9 +584,9 @@
 
 							<!-- Introducing Twine -->
 							<section id="twine_cs">
-								<h2>5.0.0 Introducing Twine</h2>
+								<h2>5.0 Introducing Twine</h2>
 								<p>
-									Reviewing the comparison points, we found a service gap between the open-source yet labor-intensive Socket.IO, and enterprise solution Ably, which is extremely reliable but is a paid service and takes control away from developers [23].
+									Reviewing the comparison points, we found a service gap between the open-source yet labor-intensive Socket.IO, and enterprise solution Ably, which is extremely reliable but is a paid service and takes control away from developers [<a class="anchor" target="_blank" href="https://ably.com/privacy">23</a>].
 								</p>
 								<p>
 									Twine fits between the two as an open-source, reliable Real-time as a Service that gives developers full ownership of their WebSocket code and data.
@@ -607,7 +602,7 @@
 							<!-- Evoultion of Twine -->
 							<section id="evolution_cs">
 								<section>
-									<h2>6.0.0 Evolution of Twine's Architecture</h2>
+									<h2>6.0 Evolution of Twine's Architecture</h2>
 									<p>
 										In this section, we will discuss the steps we took to build Twine. This includes how we achieved connection state recovery, built out Twine's infrastructure, and the design choices and tradeoffs we made along the way. 
 									</p>
@@ -616,7 +611,7 @@
 								<section>
 									<h3>6.1.0 Twine as a Pub Sub Hub</h3>
 									<p>
-										Twine is built off of the publish-subscribe (pub/sub) messaging pattern. With the pub/sub pattern, data is streamed over channels also referred to as queues or rooms. Rooms are an intermediary between publishers and subscribers and often represent a particular category of data.  A publisher sends data to a room and any subscribers subscribed to that room will receive the data [30].
+										Twine is built off of the publish-subscribe (pub/sub) messaging pattern. With the pub/sub pattern, data is streamed over channels also referred to as queues or rooms. Rooms are an intermediary between publishers and subscribers and often represent a particular category of data.  A publisher sends data to a room and any subscribers subscribed to that room will receive the data [<a class="anchor" target="_blank" href="https://www.pubnub.com/guides/pub-sub/">30</a>].
 									</p>
 									<p>
 										The benefits of pub/sub is that it decouples publishers from subscribers; publishers can send data to any number of rooms without knowing anything about the subscribers and subscribers can subscribe to and receive data from any number of rooms without needing to be connected directly to publishers. The middleman, often referred to as a “pub-sub-hub”, maintains a single connection with each of the publishers and subscribers. A publisher sends data to the hub and then it is emitted to all of the relevant subscribers.
@@ -652,7 +647,7 @@
 										We knew we needed a place to store data published from the backend servers to the Twine server. Since Twine focuses on reliability in the form of connection state recovery, we knew we needed to ensure data is placed into a persistent data store. We decided to use DynamoDB since we eventually knew we wanted Twine to deploy on Amazon Web Services (AWS).
 									</p>
 									<p>
-										AWS currently holds 33% of the market share for cloud infrastructure [24]. We wanted Twine to be easy to use and deploy so while we knew adding AWS would add some complexity to our process of creating Twine, we were willing to make this tradeoff.
+										AWS currently holds 33% of the market share for cloud infrastructure [<a class="anchor" target="_blank" href="https://en.wikipedia.org/wiki/Amazon_Web_Services">24</a>]. We wanted Twine to be easy to use and deploy so while we knew adding AWS would add some complexity to our process of creating Twine, we were willing to make this tradeoff.
 									</p>
 									<p>
 										Specifically, DynamoDB provides the following advantages:
@@ -729,7 +724,7 @@
 								<section>
 									<h3>6.3.0 Adding Redis</h3>
 									<p>
-										Now that we achieved our main goal for Twine by implementing connection state recovery, we turned to a secondary goal of making Twine scalable. While we need a persistent data store for our service to be reliable, persistent data stores are slow [25].
+										Now that we achieved our main goal for Twine by implementing connection state recovery, we turned to a secondary goal of making Twine scalable. While we need a persistent data store for our service to be reliable, persistent data stores are slow [<a class="anchor" target="_blank" href="https://www.mhebooklibrary.com/doi/book/10.1036/9780071843669">25</a>].
 									</p>
 									<p>
 										To mitigate this we decided to add a Redis cache - AWS ElastiCache for Redis - to help reduce the number of queries to  DynamoDB. Compared to a persistent data store which stores data in disk storage, data stored in AWS Elasticache for Redis is stored in-memory which can be accessed much faster. Additionally, Redis uses a key-value data structure that is optimized for quick data retrieval.
@@ -790,7 +785,7 @@
 										alt="a diagram showing Twine deployed on elastic beanstalk"
 									/>
 									<p>
-										Elastic Beanstalk is a managed platform-as-a-service provided by AWS and allows us to abstract away the complexity of maintaining our EC2 instances ourselves. Elastic Beanstalk automates the deployment of Twine EC2 server instances and an application load balancer for us. It provides autoscaling so that if traffic to instance(s) of Twine's  server increases or decreases, new instances are added or removed accordingly. Finally, it provides health monitoring so that if a particular Twine instance fails, a new healthy instance is added in its place [29].
+										Elastic Beanstalk is a managed platform-as-a-service provided by AWS and allows us to abstract away the complexity of maintaining our EC2 instances ourselves. Elastic Beanstalk automates the deployment of Twine EC2 server instances and an application load balancer for us. It provides autoscaling so that if traffic to instance(s) of Twine's  server increases or decreases, new instances are added or removed accordingly. Finally, it provides health monitoring so that if a particular Twine instance fails, a new healthy instance is added in its place [<a class="anchor" target="_blank" href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">29</a>].
 									</p>
 									<p>
 										We chose Elastic Beanstalk over other options such as Amazon Elastic Container Service for this ease of use while sacrificing some control. Additionally, we decided to containerize our Twine server logic in a Docker container so that our application and its dependencies would run consistently.
@@ -814,7 +809,7 @@
 							<!-- Engineering Challenges -->
 							<section id="engineering_challenges_cs">
 								<section>
-									<h2>7.0.0 Engineering Challenges</h2>
+									<h2>7.0 Engineering Challenges</h2>
 									<p>
 										Now that we've seen how Twine was built, we will take a closer look at the following engineering challenges we faced during the build:
 									</p>
@@ -840,10 +835,10 @@
 										To meet our needs, we looked into mechanisms for storing data on the client, namely `localStorage` and persistent cookies.
 									</p>
 									<p>
-										We started out storing our `twineId` in `localStorage`. `localStorage` is a part of the HTML5 specification and a way to store large amounts of data on the client; it is modern and faster than cookies [31].  `localstorage` persists between client visits and does not expire until it is manually deleted. Since we did not need the `twineId` to persist beyond 24 hours after our client's last disconnect, we would need to write the logic to delete it manually. Additionally, the data stored in `localStorage` is not encrypted out of the box, which means additional logic is needed to ensure the `twineId` was stored securely on the client.
+										We started out storing our `twineId` in `localStorage`. `localStorage` is a part of the HTML5 specification and a way to store large amounts of data on the client; it is modern and faster than cookies [<a class="anchor" target="_blank" href="https://www.geeksforgeeks.org/local-storage-vs-cookies/">31</a>].  `localstorage` persists between client visits and does not expire until it is manually deleted. Since we did not need the `twineId` to persist beyond 24 hours after our client's last disconnect, we would need to write the logic to delete it manually. Additionally, the data stored in `localStorage` is not encrypted out of the box, which means additional logic is needed to ensure the `twineId` was stored securely on the client.
 									</p>
 									<p>
-										After further research, we discovered that persistent cookies, albeit slower and less modern than `localStorage`, fit our needs better [31]. Persistent cookies are better used for small amounts of data stored on the client. Additionally, persistent cookies have an expiration date that we could set to 24 hours without any additional logic.
+										After further research, we discovered that persistent cookies, albeit slower and less modern than `localStorage`, fit our needs better [<a class="anchor" target="_blank" href="https://www.geeksforgeeks.org/local-storage-vs-cookies/">31</a>]. Persistent cookies are better used for small amounts of data stored on the client. Additionally, persistent cookies have an expiration date that we could set to 24 hours without any additional logic.
 									</p>
 									<p>
 										We also chose to use a cookie because of its optional HTTPOnly flag, which blocks client-side scripts from accessing the cookie data. Normally, that is not an issue, but a successful cross-site scripting attack would otherwise be able to read the `twineId` data in the cookie, hijack the user's session, and access potentially sensitive data, as well as impersonate the user within the application. Twine's HTTPOnly cookie prevents a user's session ID from falling into the wrong hands.
@@ -869,7 +864,7 @@
 										Suppose a user's WebSocket connection is disrupted. In that case, the client and server will attempt to preserve the connection by downgrading to long-polling. Likewise, if a user cannot connect via a WebSocket connection - due to firewalls or blocking antivirus software - a fallback would increase the likelihood that the application is still available.
 									</p>
 									<p>
-										When long-polling is enabled as a fallback, Socket.io takes the following actions to establish WebSocket connections by default [32]:
+										When long-polling is enabled as a fallback, Socket.io takes the following actions to establish WebSocket connections by default [<a class="anchor" target="_blank" href="https://github.com/socketio/engine.io-protocol#upgrade">32</a>]:
 									</p>
 									<ol class="bullets">
 										<li>
@@ -886,10 +881,10 @@
 										</li>
 									</ol>
 									<p>
-										The challenge is that the HTTP request to upgrade must be sent to the same server that generated the `socket.id`. Failure to do so results in a Socket.IO HTTP 400 error, stating "Session Id unknown," leading to a failed connection upgrade and fallback to long-polling [33].
+										The challenge is that the HTTP request to upgrade must be sent to the same server that generated the `socket.id`. Failure to do so results in a Socket.IO HTTP 400 error, stating "Session Id unknown," leading to a failed connection upgrade and fallback to long-polling [<a class="anchor" target="_blank" href="https://socket.io/docs/v4/how-it-works/#upgrade-mechanism">33</a>].
 									</p>
 									<p>
-										By default,​ there is no logic (or guarantee) that subsequent requests would be routed to the same server, resulting in these HTTP 400 errors and an inability for WebSocket connections to be established.
+										By default, there is no logic (or guarantee) that subsequent requests would be routed to the same server, resulting in these HTTP 400 errors and an inability for WebSocket connections to be established.
 									</p>
 									<img 
 										class="diagram" 
@@ -994,7 +989,7 @@
 							<!-- Using Twine -->
 							<section id="using-twine_cs">
 								<section>
-									<h2>8.0.0 How to Use Twine</h2>
+									<h2>8.0 How to Use Twine</h2>
 									<p>To use Twine in their existing application, a developer must:</p>
 									<ol class="bullets">
 										<li>
@@ -1061,7 +1056,7 @@
 										Next, the developer needs to configure the client using the Twine constructor and their newly created Twine domain name.
 									</p>
 									<p>
-										Once the constructor is invoked, a TwineClientLibrary instance is created and a connection is established with the Twine server. From here, the developer has access to built-in functions they can use to connect/disconnect the WebSocket connection manually; subscribe/unsubscribe users to a particular room; and listen for messages being sent to a particular room – passing in a callback function to handle the data as they see fit coming from the backend.
+										Once the constructor is invoked, a TwineClientLibrary instance is created and a connection is established with the Twine server. From here, the developer has access to built-in functions they can use to connect/disconnect the WebSocket connection manually; subscribe/unsubscribe users to a particular room; and listen for messages being sent to a particular room - passing in a callback function to handle the data as they see fit coming from the backend.
 									</p>
 								</section>
 
@@ -1087,7 +1082,7 @@
 							<!-- Future Work -->
 							<section id="future-work_cs">
 								<section>
-									<h2>9.0.0 Future Work</h2>
+									<h2>9.0 Future Work</h2>
 									<p>
 										While we are happy with Twine, the following are some improvements we would like to make in the future.
 									</p>
@@ -1139,46 +1134,45 @@
 							<!-- References -->
 							<section id="references_cs">
 								<section>
-									<h2>10.0.0 References</h2>
+									<h2>10.0 References</h2>
 									<ol>
-										<li>https://www.pubnub.com/blog/how-fast-is-realtime-human-perception-and-technology/</li>
-										<li>https://yusufarslan.net/sites/yusufarslan.net/files/upload/content/Miller1968.pdf</li>
-										<li>https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events</li>
-										<li>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade</li>
-										<li>https://ably.com/topic/websockets-vs-http</li>
-										<li>https://ably.com/topic/what-are-websockets-used-for</li>
-										<li>https://ably.com/topic/websockets-pros-cons#what-are-the-advantages-of-web-sockets</li>
-										<li>https://blog.feathersjs.com/http-vs-websockets-a-performance-comparison-da2533f13a77</li>
-										<li>https://www.pubnub.com/guides/websockets/</li>
-										<li>https://www.cyberlinkasp.com/insights/what-is-software-scalability-and-why-is-it-important/</li>
-										<li>https://www.devteam.space/blog/how-to-scale-your-software-product/</li>
-										<li>https://techterms.com/definition/scalable</li>
-										<li>https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling/</li>
-										<li>https://ably.com/topic/the-challenge-of-scaling-websockets</li>
-										<li>https://hpbn.co/websocket/#performance-checklist</li>
-										<li>https://support.quicknode.com/hc/en-us/articles/</li>
-										<li>9422611596305-Handling-Websocket-Drops-and-Disconnections</li>
-										<li>https://socket.io/docs/v4/connection-state-recovery</li>
-										<li>https://websockets.readthedocs.io/en/stable/topics/memory.html</li>
-										<li>What Is WebSocket? How Does It Work? - GcoreGcorehttps://gcore.com</li>
-										<li>https://ably.com/topic/pusher-vs-pubnub-vs-firebase </li>
-										<li>https://ably.com/compare/ably-vs-pusher </li>
-										<li>https://ably.com/docs/general/limits </li>
-										<li>https://ably.com/privacy </li>
-										<li>https://en.wikipedia.org/wiki/Amazon_Web_Services</li>
-										<li>Web Scalability for Startup Engineers, By Artur Ejsmont</li>
-										<li>https://faqs.ably.com/connection-state-recovery</li>
-										<li>https://blog.bytebytego.com/p/at-most-once-at-least-once-exactly</li>
-										<li>https://ably.com/blog/achieving-exactly-once-message-processing-with-ably</li>
-										<li>https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html</li>
-										<li>https://www.pubnub.com/guides/pub-sub/</li>
-										<li>https://www.geeksforgeeks.org/local-storage-vs-cookies/</li>
-										<li>https://github.com/socketio/engine.io-protocol#upgrade </li>
-										<li>https://socket.io/docs/v4/how-it-works/#upgrade-mechanism </li>
-										<li>https://socket.io/docs/v4/using-multiple-nodes/</li>
-										<li>https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html</li>
-										<li>https://socket.io/docs/v4/redis-adapter/</li>
-										<li>https://ably.com/topic/what-are-websockets-used-for</li>
+										<li><a class="anchor" target="_blank" href="https://www.pubnub.com/blog/how-fast-is-realtime-human-perception-and-technology/">https://www.pubnub.com/blog/how-fast-is-realtime-human-perception-and-technology/</a></li>
+										<li><a class="anchor" target="_blank" href="https://yusufarslan.net/sites/yusufarslan.net/files/upload/content/Miller1968.pdf">https://yusufarslan.net/sites/yusufarslan.net/files/upload/content/Miller1968.pdf</a></li>
+										<li><a class="anchor" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events">https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events</a></li>
+										<li><a class="anchor" target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade">https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Upgrade</a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/topic/websockets-vs-http">https://ably.com/topic/websockets-vs-http</a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/topic/what-are-websockets-used-for">https://ably.com/topic/what-are-websockets-used-for</a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/topic/websockets-pros-cons#what-are-the-advantages-of-web-sockets">https://ably.com/topic/websockets-pros-cons#what-are-the-advantages-of-web-sockets</a></li>
+										<li><a class="anchor" target="_blank" href="https://blog.feathersjs.com/http-vs-websockets-a-performance-comparison-da2533f13a77">https://blog.feathersjs.com/http-vs-websockets-a-performance-comparison-da2533f13a77</a></li>
+										<li><a class="anchor" target="_blank" href="https://www.pubnub.com/guides/websockets/">https://www.pubnub.com/guides/websockets/</a></li>
+										<li><a class="anchor" target="_blank" href="https://www.cyberlinkasp.com/insights/what-is-software-scalability-and-why-is-it-important/">https://www.cyberlinkasp.com/insights/what-is-software-scalability-and-why-is-it-important/</a></li>
+										<li><a class="anchor" target="_blank" href="https://www.devteam.space/blog/how-to-scale-your-software-product/">https://www.devteam.space/blog/how-to-scale-your-software-product/</a></li>
+										<li><a class="anchor" target="_blank" href="https://techterms.com/definition/scalable">https://techterms.com/definition/scalable</a></li>
+										<li><a class="anchor" target="_blank" href="https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling/">https://www.cloudzero.com/blog/horizontal-vs-vertical-scaling/</a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/topic/the-challenge-of-scaling-websockets">https://ably.com/topic/the-challenge-of-scaling-websockets</a></li>
+										<li><a class="anchor" target="_blank" href="https://hpbn.co/websocket/#performance-checklist">https://hpbn.co/websocket/#performance-checklist</a></li>
+										<li><a class="anchor" target="_blank" href="https://support.quicknode.com/hc/en-us/articles/">https://support.quicknode.com/hc/en-us/articles/</a></li>
+										<li><a class="anchor" target="_blank" href="https://socket.io/docs/v4/connection-state-recovery">https://socket.io/docs/v4/connection-state-recovery</a></li>
+										<li><a class="anchor" target="_blank" href="https://websockets.readthedocs.io/en/stable/topics/memory.html">https://websockets.readthedocs.io/en/stable/topics/memory.html</a></li>
+										<li><a class="anchor" target="_blank" href="https://gcore.com">https://gcore.com</a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/topic/pusher-vs-pubnub-vs-firebase ">https://ably.com/topic/pusher-vs-pubnub-vs-firebase </a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/compare/ably-vs-pusher ">https://ably.com/compare/ably-vs-pusher </a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/docs/general/limits ">https://ably.com/docs/general/limits </a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/privacy ">https://ably.com/privacy </a></li>
+										<li><a class="anchor" target="_blank" href="https://en.wikipedia.org/wiki/Amazon_Web_Services">https://en.wikipedia.org/wiki/Amazon_Web_Services</a></li>
+										<li><a class="anchor" target="_blank" href="https://www.mhebooklibrary.com/doi/book/10.1036/9780071843669">Web Scalability for Startup Engineers, By Artur Ejsmont</a></li>
+										<li><a class="anchor" target="_blank" href="https://faqs.ably.com/connection-state-recovery">https://faqs.ably.com/connection-state-recovery</a></li>
+										<li><a class="anchor" target="_blank" href="https://blog.bytebytego.com/p/at-most-once-at-least-once-exactly">https://blog.bytebytego.com/p/at-most-once-at-least-once-exactly</a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/blog/achieving-exactly-once-message-processing-with-ably">https://ably.com/blog/achieving-exactly-once-message-processing-with-ably</a></li>
+										<li><a class="anchor" target="_blank" href="https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html">https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/Welcome.html</a></li>
+										<li><a class="anchor" target="_blank" href="https://www.pubnub.com/guides/pub-sub/">https://www.pubnub.com/guides/pub-sub/</a></li>
+										<li><a class="anchor" target="_blank" href="https://www.geeksforgeeks.org/local-storage-vs-cookies/">https://www.geeksforgeeks.org/local-storage-vs-cookies/</a></li>
+										<li><a class="anchor" target="_blank" href="https://github.com/socketio/engine.io-protocol#upgrade ">https://github.com/socketio/engine.io-protocol#upgrade </a></li>
+										<li><a class="anchor" target="_blank" href="https://socket.io/docs/v4/how-it-works/#upgrade-mechanism ">https://socket.io/docs/v4/how-it-works/#upgrade-mechanism </a></li>
+										<li><a class="anchor" target="_blank" href="https://socket.io/docs/v4/using-multiple-nodes/">https://socket.io/docs/v4/using-multiple-nodes/</a></li>
+										<li><a class="anchor" target="_blank" href="https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html">https://docs.aws.amazon.com/elasticloadbalancing/latest/application/sticky-sessions.html</a></li>
+										<li><a class="anchor" target="_blank" href="https://socket.io/docs/v4/redis-adapter/">https://socket.io/docs/v4/redis-adapter/</a></li>
+										<li><a class="anchor" target="_blank" href="https://ably.com/topic/what-are-websockets-used-for">https://ably.com/topic/what-are-websockets-used-for</a></li>
 									</ol>
 								</section>
 							</section>
