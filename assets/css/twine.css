@@ -1,0 +1,116 @@
+* {
+	--primary-light: #E8974A;
+	--secondary-light: #F7D3BA;
+	--primary-dark: #122738;
+	--secondary-dark: #235789;
+	--text-color: rgba(255, 255, 255, 0.55);
+
+	--green: #429EA6;
+}
+
+.member {
+	margin-left: 1rem;
+}
+
+#zero {
+	background-color: #ffffff2b;
+}
+
+#twine-logo {
+	height: 60px;
+	position: absolute;
+	left: 160px;
+	top: 30px;
+	opacity: 0;
+	transition: opacity 1s ease-in-out;
+}
+
+#page-title {
+	color: var(--primary-light);
+	margin-bottom: 0;
+	font-size: 200px;
+	
+	font-family: 'Paytone One', sans-serif;
+	letter-spacing: 0.6rem;
+}
+
+.diagram {
+	display: block;
+	margin: 75px auto;
+	max-width: 70%;
+	height: auto;
+}
+
+.inner {
+	margin: 0 auto;
+}
+
+.youtube {
+	position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+	margin-bottom: 35px;
+}
+
+#tech-talk {
+	position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 1680px) {
+
+	#twine-logo {
+		height: 50px;
+		left: 120px;
+	}
+
+}
+
+@media screen and (max-width: 1280px) {
+
+	#page-title {
+		font-size: 150px;
+	}
+
+	#twine-logo {
+		display: none;
+	}
+
+}
+
+@media screen and (max-width: 736px) {
+
+	#page-title {
+		font-size: 100px;
+	}
+
+}
+
+.bold {
+	color: black;
+}
+
+#one {
+	background-color: #687277;
+}
+
+#two {
+	background: var(--primary-light);
+}
+
+#four {
+	background: #fff;
+	color: var(--primary-dark);
+}
+
+#four h1, #four h2, #four h3, #four h4 {
+	color: rgb(28, 28, 28);
+}
+
+.bullets {
+	margin-top: -30px;
+}
