@@ -37,7 +37,7 @@
 .diagram {
 	display: block;
 	margin: 75px auto;
-	max-width: 70%;
+	max-width: 90%;
 	height: auto;
 }
 
@@ -128,7 +128,7 @@
 
 	.diagram {
 		margin: 75px auto;
-		max-width: 85%;
+		max-width: 95%;
 	}
 
 }
