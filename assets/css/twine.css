@@ -68,35 +68,6 @@
   height: 100%;
 }
 
-@media screen and (max-width: 1680px) {
-
-	#twine-logo {
-		height: 50px;
-		left: 120px;
-	}
-
-}
-
-@media screen and (max-width: 1280px) {
-
-	#page-title {
-		font-size: 150px;
-	}
-
-	#twine-logo {
-		display: none;
-	}
-
-}
-
-@media screen and (max-width: 736px) {
-
-	#page-title {
-		font-size: 100px;
-	}
-
-}
-
 .bold {
 	color: black;
 }
@@ -136,10 +107,45 @@
 	margin-top: -30px;
 }
 
+@media screen and (max-width: 1680px) {
+
+	#twine-logo {
+		height: 50px;
+		left: 120px;
+	}
+
+}
+
+@media screen and (max-width: 1280px) {
+
+	#page-title {
+		font-size: 150px;
+	}
+
+	#twine-logo {
+		display: none;
+	}
+
+	.diagram {
+		margin: 75px auto;
+		max-width: 85%;
+	}
+
+}
+
 @media screen and (max-width: 736px) {
+
+	#page-title {
+		font-size: 100px;
+	}
 
 	#four {
 		padding: 0px;
+	}
+
+	.diagram {
+		margin: 75px auto;
+		max-width: 100%;
 	}
 
 }
