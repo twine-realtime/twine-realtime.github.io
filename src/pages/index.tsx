@@ -44,7 +44,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} | A Real-Time Communication Service`}
+      title={`A Real-Time Communication Service`}
       description="Abstracting away your web applications real-time infrastructure"
     >
       <HomepageHeader />
