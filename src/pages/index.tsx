@@ -44,7 +44,7 @@ export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`${siteConfig.title} Framework`}
+      title={`${siteConfig.title} | A Real-Time Communication Service`}
       description="The easiest way to integrate video conferencing"
     >
       <HomepageHeader />
