@@ -45,7 +45,7 @@ export default function Home(): JSX.Element {
   return (
     <Layout
       title={`${siteConfig.title} | A Real-Time Communication Service`}
-      description="The easiest way to integrate video conferencing"
+      description="Abstracting away your web applications real-time infrastructure"
     >
       <HomepageHeader />
       <main>
