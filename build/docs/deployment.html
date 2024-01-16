@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-deployment" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.0.0">
+<title data-rh="true">Twine Service Deployment | Twine</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://twine-realtime.github.io/img/twine-logo"><meta data-rh="true" name="twitter:image" content="https://twine-realtime.github.io/img/twine-logo"><meta data-rh="true" property="og:url" content="https://twine-realtime.github.io/docs/deployment"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Twine Service Deployment | Twine"><meta data-rh="true" name="description" content="Twine AWS Requirements"><meta data-rh="true" property="og:description" content="Twine AWS Requirements"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://twine-realtime.github.io/docs/deployment"><link data-rh="true" rel="alternate" href="https://twine-realtime.github.io/docs/deployment" hreflang="en"><link data-rh="true" rel="alternate" href="https://twine-realtime.github.io/docs/deployment" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Twine RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Twine Atom Feed"><link rel="stylesheet" href="/assets/css/styles.e6d73dff.css">
+<script src="/assets/js/runtime~main.039a6966.js" defer="defer"></script>
+<script src="/assets/js/main.66bd0e5b.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/twine-logo.png" alt="logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/twine-logo.png" alt="logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Twine Real-Time</b></a></div><div class="navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/case-study">Case-Study</a><a class="navbar__item navbar__link" href="/#tech-talk-container">Tech Talk</a><a class="navbar__item navbar__link" href="/#team">Team</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/deployment">Docs</a><a href="https://github.com/twine-realtime/" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub</a><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/docs/deployment">Twine Service Deployment</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/client-library">Twine Client Library</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/server-library">Twine Server Library</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Twine Service Deployment</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Twine Service Deployment</h1>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Twine AWS Requirements</summary><div><div class="collapsibleContent_i85q"><ul>
+<li>IAM User</li>
+<li>Route 53</li>
+<li>DynamoDB</li>
+<li>Secrets Manager</li>
+<li>Elastic Beanstalk</li>
+<li>Certificate Manager</li>
+<li>ElastiCache for Redis</li>
+<li>Application Load Balancer</li>
+</ul></div></div></details>
+<p>The Twine architecture is extensive and requires broad permissions. For smooth deployment, we recommend creating a new AWS account and ensuring that Node.js v18.x or greater is installed in your local environment. Complete the steps below to deploy Twine.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="create-an-aws-account-and-iam-user">Create an AWS Account and IAM User<a href="#create-an-aws-account-and-iam-user" class="hash-link" aria-label="Direct link to Create an AWS Account and IAM User" title="Direct link to Create an AWS Account and IAM User">​</a></h2>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Step-by-step guide</summary><div><div class="collapsibleContent_i85q"><ol>
+<li><a href="https://portal.aws.amazon.com/billing/signup#/start/email" target="_blank" rel="noopener noreferrer">Sign up for a new AWS Account</a></li>
+<li>Sign in to your new AWS Account</li>
+<li>Click the second rightmost button in the top navbar</li>
+<li>Select the region where you will deploy Twine</li>
+<li>Type &#x27;IAM&#x27; in the search bar at the top of the page</li>
+<li>Click on the &#x27;IAM&#x27; service</li>
+<li>Click &#x27;Users&#x27; in the sidebar</li>
+<li>Click &#x27;Create User&#x27;</li>
+<li>Choose a user name and click &#x27;Next&#x27;</li>
+<li>Select &#x27;Attach Policies Directly&#x27;</li>
+<li>Type &#x27;AdministratorAccess&#x27; in the &#x27;Permissions Policies&#x27; searchbar</li>
+<li>Select &#x27;AdministratorAccess&#x27; and click &#x27;Next&#x27;</li>
+<li>Click &#x27;Create User&#x27;</li>
+<li>Click &#x27;Users&#x27; in the sidebar and select the user you created</li>
+<li>Click the &#x27;Security Credentials&#x27; tab</li>
+<li>Click &#x27;Create Access Key&#x27;</li>
+<li>Select &#x27;Command Line Interface (CLI)&#x27;</li>
+<li>Click &#x27;Next&#x27; and then click &#x27;Create Access Key&#x27;</li>
+<li>Prepare to provide your access key and secret access key</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="create-an-aws-cli-profile">Create an AWS CLI profile<a href="#create-an-aws-cli-profile" class="hash-link" aria-label="Direct link to Create an AWS CLI profile" title="Direct link to Create an AWS CLI profile">​</a></h2>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Step-by-step guide</summary><div><div class="collapsibleContent_i85q"><ol>
+<li><a href="https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html" target="_blank" rel="noopener noreferrer">Install the AWS CLI</a></li>
+<li>Execute <code>aws configure --profile new-profile-name</code> in terminal</li>
+<li>Provide your access key and secret access key</li>
+<li>Provide the region that you previously determined (must match)</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="register-a-route-53-domain">Register a Route 53 Domain<a href="#register-a-route-53-domain" class="hash-link" aria-label="Direct link to Register a Route 53 Domain" title="Direct link to Register a Route 53 Domain">​</a></h2>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Step-by-step guide</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>Enter the <a href="http://console.aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS Console</a> and search for &#x27;Route 53&#x27;</li>
+<li>Click &#x27;Dashboard&#x27; in the Route 53 page sidebar</li>
+<li>Check the top right of the webpage and ensure you are in the previously determined region</li>
+<li>Register a Route 53 domain (you will later use the domain name with the Twine client library)</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="request-a-tls-certificate">Request a TLS Certificate<a href="#request-a-tls-certificate" class="hash-link" aria-label="Direct link to Request a TLS Certificate" title="Direct link to Request a TLS Certificate">​</a></h2>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Step-by-step guide</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>Search for &#x27;Certificate Manager&#x27;</li>
+<li>Click &#x27;Request Certificate&#x27; in the Certificate Manager sidebar</li>
+<li>&#x27;Request a Public Certificate&#x27; should be selected; click &#x27;Next&#x27;</li>
+<li>Enter your new domain name</li>
+<li>Select your validation method of choice</li>
+<li>Select the &#x27;RSA 2048&#x27; key algorithm</li>
+<li>Click &#x27;Request&#x27;</li>
+<li>Validate the request</li>
+</ol></div></div></details>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="deploy-the-twine-architecture">Deploy the Twine Architecture<a href="#deploy-the-twine-architecture" class="hash-link" aria-label="Direct link to Deploy the Twine Architecture" title="Direct link to Deploy the Twine Architecture">​</a></h2>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Step-by-step guide</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>Clone this repository</li>
+<li>Open your terminal</li>
+<li>Navigate to the repository directory</li>
+<li>Execute <code>aws configure list</code></li>
+<li>If the &#x27;Name&#x27; value is not your newly-created AWS CLI profile name, execute <code>export AWS_PROFILE=new-profile-name</code> (this command is different for Windows users)</li>
+<li>Execute <code>aws configure list</code> again to confirm the change occurred</li>
+<li>Execute <code>npm install</code> to install the Twine deployment dependencies</li>
+<li>Execute <code>npm start</code> to launch the deployment process</li>
+<li>Follow the instructions in your terminal
+<img loading="lazy" alt="alt text" src="/assets/images/deploy-1c0abecf2784d1846a68b3945f8ad522.png" width="624" height="272" class="img_ev3q"></li>
+</ol></div></div></details>
+<p>The creation process can be observed in the &#x27;Stacks&#x27; section of the AWS Cloud Formation page. After the process is complete, the Twine server will be running in the Elastic Beanstalk environment. However, to satisfy browser requirements, Twine must use your newly-created domain name instead of the load balancer endpoint.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="create-a-dns-record">Create a DNS Record<a href="#create-a-dns-record" class="hash-link" aria-label="Direct link to Create a DNS Record" title="Direct link to Create a DNS Record">​</a></h2>
+<details class="details_lb9f alert alert--info details_b_Ee" data-collapsed="true"><summary>Step-by-step guide</summary><div><div class="collapsibleContent_i85q"><ol>
+<li>Enter the <a href="http://console.aws.amazon.com" target="_blank" rel="noopener noreferrer">AWS Console</a> and search for &#x27;Route 53&#x27;</li>
+<li>Click &#x27;Hosted Zones&#x27; in the AWS Route 53 sidebar</li>
+<li>Click on the listed domain name</li>
+<li>Click &#x27;Create Record&#x27;</li>
+<li>Ensure the Record Type is &#x27;A&#x27; then click &#x27;Alias&#x27;</li>
+<li>Set the &#x27;Endpoint&#x27; to &#x27;Alias to Application and Classic Load Balancer&#x27;</li>
+<li>Select the region name that you previously determined</li>
+<li>Select the single option for &#x27;Choose Load Balancer&#x27;</li>
+<li>Click &#x27;Create Records&#x27;</li>
+</ol></div></div></details>
+<p>Record creation will take a few minutes. The Twine architecture will then be complete and ready for the Twine server/client library implementation. Please note that Twine issues third-party cookies for sticky sessions and to store WebSocket session data for connection state recovery. Your Twine API key (required to publish to the Twine API) is available on your newly-created AWS Secrets Manager page.</p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--next" href="/docs/client-library"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Twine Client Library</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#create-an-aws-account-and-iam-user" class="table-of-contents__link toc-highlight">Create an AWS Account and IAM User</a></li><li><a href="#create-an-aws-cli-profile" class="table-of-contents__link toc-highlight">Create an AWS CLI profile</a></li><li><a href="#register-a-route-53-domain" class="table-of-contents__link toc-highlight">Register a Route 53 Domain</a></li><li><a href="#request-a-tls-certificate" class="table-of-contents__link toc-highlight">Request a TLS Certificate</a></li><li><a href="#deploy-the-twine-architecture" class="table-of-contents__link toc-highlight">Deploy the Twine Architecture</a></li><li><a href="#create-a-dns-record" class="table-of-contents__link toc-highlight">Create a DNS Record</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Navigation</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/case-study">Case Study</a></li><li class="footer__item"><a class="footer__link-item" href="/#tech-talk-container">Tech Talk</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/deployment">Docs</a></li><li class="footer__item"><a href="https://github.com/twine-realtime" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 Twine</div></div></div></footer></div>
+</body>
+</html>
