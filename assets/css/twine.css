@@ -1,11 +1,42 @@
 * {
+	/* Current Colors */
 	--primary-light: #E8974A;
 	--secondary-light: #F7D3BA;
 	--primary-dark: #122738;
 	--secondary-dark: #235789;
 	--text-color: rgba(255, 255, 255, 0.55);
-
 	--green: #429EA6;
+	--gray: #687277;
+	
+	/* Other */
+	/* --primary-light: #E8974A;
+	--secondary-light: #f8e6d9;
+	--primary-dark: #263D42;
+	--secondary-dark: #1B998B;
+	--text-color: rgba(255, 255, 255, 0.55);
+	--green: #429EA6;
+	--gray: #687277; */
+
+
+	/* Green */
+	/* --primary-light: #ffa14f;
+	--secondary-light: #F7D3BA;
+	--primary-dark: #073b3e;
+	--secondary-dark: #095256;
+	--text-color: rgba(255, 255, 255, 0.55);
+	--green: #429EA6;
+	--gray: #43494c; */
+	
+	/* Purple */
+	/* --primary-light: #ffa653;
+	--secondary-light: #F7D3BA;
+	--primary-dark: #16071b;
+	--secondary-dark: #2C0E37;
+	--text-color: rgba(255, 255, 255, 0.55);
+	--green: #429EA6;
+	--gray: #687277; */
+
+
 }
 
 .member {
@@ -27,6 +58,7 @@
 
 #page-title {
 	color: var(--primary-light);
+	/* color: #fff; */
 	margin-bottom: 0;
 	font-size: 200px;
 	
@@ -73,11 +105,17 @@
 }
 
 #one {
-	background-color: #687277;
+	background-color: var(--gray);
+	/* color: black; */
 }
+
+/* #one h2, #one h3, #one h4, #two h2, #two h3, #two h4 {
+	color: black;
+} */
 
 #two {
 	background: var(--primary-light);
+	/* color: black; */
 }
 
 #four {

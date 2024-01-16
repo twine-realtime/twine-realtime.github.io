@@ -1,11 +1,11 @@
 @import url(fontawesome-all.min.css);
 
 * {
-	--primary-light: #E8974A;
+	/* --primary-light: #E8974A;
 	--secondary-light: #F7D3BA;
 	--primary-dark: #122738;
 	--secondary-dark: #235789;
-	--text-color: rgba(255, 255, 255, 0.55);
+	--text-color: rgba(255, 255, 255, 0.55); */
 }
 
 html, body, div, span, applet, object,
