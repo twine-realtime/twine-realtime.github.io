@@ -85,27 +85,6 @@ const config: Config = {
             },
           ],
         },
-        // {
-        //   title: "More",
-        //   items: [
-        //     {
-        //       label: "Case Study",
-        //       href: "/case-study",
-        //     },
-        //     {
-        //       label: "Docs",
-        //       href: "/docs/API"
-        //     },
-        //     {
-        //       label: "GitHub",
-        //       href: "https://github.com/Arbiter-WRTC",
-        //     },
-        //     {
-        //       label: "Tech Talk",
-        //       href: "https://www.youtube.com/watch?v=3BMGsQI5XOI",
-        //     },
-        //   ],
-        // },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Twine`,
     },

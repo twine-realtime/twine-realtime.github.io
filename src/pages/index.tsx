@@ -7,7 +7,7 @@ function HomepageHeader() {
   return (
     <section
       id="hero"
-      className="bg-gradient-to-r from-arbiterBlue to-arbiterPink flex flex-col justify-center sm:flex-col p-6 items-center gap-8 scroll-mt-40"
+      className="bg-gradient-to-r from-twineBlue to-twinePink flex flex-col justify-center sm:flex-col p-6 items-center gap-8 scroll-mt-40"
     >
       <article className="px-4 text-white antialiased py-8 md:py-10 pb-14 relative font-sans border-solid border-t-1 border-gray-700 border-r-0 border-l-0 border-b-0 max-w-full">
         <FadeInSection fadeDistance={500}>

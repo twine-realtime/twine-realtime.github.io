@@ -11,8 +11,8 @@ module.exports = {
         raleway: ['Raleway', 'sans-serif'],
       },
       colors: {
-        arbiterBlue: '#0a2a7f',
-        arbiterPink: '#f33798',
+        twineBlue: '#0a2a7f',
+        twinePink: '#f33798',
       },
     },
   },

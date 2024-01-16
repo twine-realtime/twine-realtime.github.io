@@ -983,13 +983,13 @@ li {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
-.from-arbiterBlue {
+.from-twineBlue {
   --tw-gradient-from: #0a2a7f var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(10 42 127 / 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.to-arbiterPink {
+.to-twinePink {
   --tw-gradient-to: #E8974A var(--tw-gradient-to-position);
 }
 
