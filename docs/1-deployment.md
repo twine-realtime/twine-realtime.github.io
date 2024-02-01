@@ -74,7 +74,7 @@ The Twine architecture is extensive and requires broad permissions. For smooth d
 2. Click 'Request Certificate' in the Certificate Manager sidebar
 3. 'Request a Public Certificate' should be selected; click 'Next'
 4. Enter your new domain name
-5. Select your validation method of choice
+5. Select "email validation" & follow instructions in the email
 6. Select the 'RSA 2048' key algorithm
 7. Click 'Request'
 8. Validate the request
