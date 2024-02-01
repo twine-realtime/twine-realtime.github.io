@@ -49,7 +49,7 @@ The Twine architecture is extensive and requires broad permissions. For smooth d
 <!--All you need is a blank line-->
 
 1. [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html)
-2. Execute `aws configure --profile new-profile-name` in terminal
+2. Execute `aws configure --profile new-profile-name` in terminal, replacing `new-profile-name` with your desired profile name
 3. Provide your access key and secret access key
 4. Provide the region that you previously determined (must match)
 </details>
@@ -74,7 +74,7 @@ The Twine architecture is extensive and requires broad permissions. For smooth d
 2. Click 'Request Certificate' in the Certificate Manager sidebar
 3. 'Request a Public Certificate' should be selected; click 'Next'
 4. Enter your new domain name
-5. Select "email validation" & follow instructions in the email
+5. Select `email validation` & follow instructions in the email
 6. Select the 'RSA 2048' key algorithm
 7. Click 'Request'
 8. Validate the request
