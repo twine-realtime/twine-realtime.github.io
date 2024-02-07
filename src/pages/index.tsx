@@ -11,10 +11,10 @@ function HomepageHeader() {
     >
       <article className="px-4 text-white antialiased py-8 md:py-10 pb-14 relative font-sans border-solid border-t-1 border-gray-700 border-r-0 border-l-0 border-b-0 max-w-full">
         <h1 className="leading-[48px] mb-2 text-white font-main text-4xl md:text-5xl tracking-tighter font-medium max-w-4xl mx-auto text-center md:leading-tight">
-          <strong><i>Twine</i></strong> is an open-source, auto-scaling, drop-in RaaS (Real-time as a Service)
+          <strong><i>Twine</i></strong> is an open-source, auto-scaling Independent Infrastructure for WebSockets
         </h1>
         <p id="sub-title" className="text-xl leading-normal md:text-2xl mx-auto text-center max-w-6xl text-gray-300 mt-1 md:mt-2 md:leading-10">
-        Designed to reliably abstract away the complexity of real-time communication<br></br>for modern web applications
+        Built to drop reliable real-time functionality into existing web applications
           <br />{' '}
         </p>
         <div className="flex flex-col-reverse md:flex-row justify-center p-6 items-center gap-2 mt-8 w-full">
