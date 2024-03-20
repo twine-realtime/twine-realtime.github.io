@@ -250,7 +250,7 @@ export default function HomepageFeatures(): JSX.Element {
                   className="shadow-img"
                   width="640"
                   height="360" 
-                  src="https://www.youtube.com/embed/CUIlZJH1Kqc?si=MKQxbQGWbFvbzp2U" 
+                  src="https://www.youtube.com/embed/coNghRR7054?si=iNbdxTJZ4f5FOVMa" 
                   title="YouTube video player" 
                   frameBorder="0" 
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen>
